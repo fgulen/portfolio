@@ -1,4 +1,4 @@
-@import "css/normalize.css";
+@import "/css/normalize.css";
 
 /*Global variables*/
 
@@ -6,7 +6,7 @@ body {
     font-family:Noto Sans;
     margin-left:50px;
     margin-right: 50px; 
-    background: black;
+    background: #000;
     color: white;
     font-size: 1.3rem;
 }
@@ -19,35 +19,43 @@ header{
 }
 
 .language select{
-    border-radius: 4px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-color: #753240;
+    color: white;
+    border: none;
 }
 
 .logo{
     font-family: sacramento;
+    font-size: 4rem;
+    color: #753240;
+    padding-left: 20px;
 }
 .mainmenu{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    text-align: center;
     flex-wrap: wrap;
+    border-bottom: 1px solid  rgb(39, 36, 36);
 }
 .mainmenu a,ul{
     text-decoration: none;
     list-style: none;
-    color:white;
+    color:#753240;
     padding-left: 0px;
     padding: 20px, 60px;
 }
-.mainmenu li{
-    
-}
 .showcase{
-    height: auto;
+    background: url(/img/fg.png) no-repeat ;
+    background-size: contain;
+    margin-right: 0px;
+    background-position: center;
+    background-position: right 20px bottom 10px;
+    height: 400px;
     display: flex;
-    padding: 40px;
-    border-top: 3px solid rgb(39, 36, 36);
+    border-top: 3px solid #753240;
     border-bottom: 1px solid  rgb(39, 36, 36);
 }
 
@@ -57,6 +65,13 @@ header{
     line-height: 6rem;
 }
 .motto{
-    color: blue;
+    color:#3b8ec2;
+}
+.motto2{
+    font-size: 2rem;
+}
 
+footer{
+    height: 200px;
+    
 }
