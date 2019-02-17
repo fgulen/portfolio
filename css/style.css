@@ -1,0 +1,62 @@
+@import "/css/normalize.css";
+
+/*Global variables*/
+
+body {
+    font-family:Noto Sans;
+    margin-left:50px;
+    margin-right: 50px; 
+    background: black;
+    color: white;
+    font-size: 1.3rem;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.language select{
+    border-radius: 4px;
+}
+
+.logo{
+    font-family: sacramento;
+}
+.mainmenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.mainmenu a,ul{
+    text-decoration: none;
+    list-style: none;
+    color:white;
+    padding-left: 0px;
+    padding: 20px, 60px;
+}
+.mainmenu li{
+    
+}
+.showcase{
+    height: auto;
+    display: flex;
+    padding: 40px;
+    border-top: 3px solid rgb(39, 36, 36);
+    border-bottom: 1px solid  rgb(39, 36, 36);
+}
+
+.showcase p{
+    margin: auto;
+    font-size: 4rem;
+    line-height: 6rem;
+}
+.motto{
+    color: blue;
+
+}
