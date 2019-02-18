@@ -16,6 +16,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .language select{
@@ -74,4 +75,15 @@ header{
 footer{
     height: 200px;
     
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer li{
+    display: block;
+    margin-top: 40px;
+    margin-left:40px;
 }
