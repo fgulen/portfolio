@@ -98,5 +98,9 @@ footer li{
         flex-wrap: nowrap;
     }
       
-
+    .showcase p{
+        margin: 0px;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
 }
