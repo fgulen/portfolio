@@ -49,7 +49,7 @@ header{
     padding: 20px, 60px;
 }
 .showcase{
-    background: url("/img/fg.png") no-repeat ;
+    background: url("../img/fg.png") no-repeat ;
     background-size: contain;
     margin-right: 0px;
     background-position: center;
