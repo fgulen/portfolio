@@ -3,6 +3,12 @@
 
 /*Global variables*/
 
+:root{
+    --mor:#a05767;
+    --hover:#753240;
+    --siyah:#000;
+  }
+
 body {
     font-family:Noto Sans;
     margin-left:50px;
@@ -24,7 +30,7 @@ header{
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
-    background-color: #753240;
+    background-color: var(--mor);
     color: white;
     border: none;
 }
@@ -32,7 +38,7 @@ header{
 .logo{
     font-family: sacramento;
     font-size: 4rem;
-    color: #753240;
+    color: var(--mor);
     padding-left: 20px;
 }
 .mainmenu{
@@ -45,13 +51,13 @@ header{
 .mainmenu a,ul{
     text-decoration: none;
     list-style: none;
-    color:#753240;
+    color:var(--mor);
     padding-left: 0px;
     padding: 20px, 60px;
 }
 
 .mainmenu a:hover{
-    color:#a05767;  
+    color:var(--hover);  
 }
 .showcase{
     background: url("../img/fg.png") no-repeat ;
@@ -61,7 +67,7 @@ header{
     background-position: right 0px bottom 0px;
     height: 400px;
     display: flex;
-    border-top: 3px solid #753240;
+    border-top: 3px solid var();
     border-bottom: 1px solid  rgb(39, 36, 36);
 }
 
@@ -94,10 +100,16 @@ footer li{
 }
 
 .footer a:hover{
-    color:#a05767; 
+    color:var(--hover); 
 }
 
 @media (max-width: 700px){
+
+    body {
+        margin-left:20px;
+        margin-right: 20px; 
+
+    }
 
     .mainmenu{
         flex-direction: column;
