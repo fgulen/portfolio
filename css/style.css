@@ -49,6 +49,10 @@ header{
     padding-left: 0px;
     padding: 20px, 60px;
 }
+
+.mainmenu a:hover{
+    color:#a05767;  
+}
 .showcase{
     background: url("../img/fg.png") no-repeat ;
     background-size: contain;
@@ -87,7 +91,10 @@ footer{
 footer li{
     display: block;
     margin:30px 30px;
-    
+}
+
+.footer a:hover{
+    color:#a05767; 
 }
 
 @media (max-width: 700px){
