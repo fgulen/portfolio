@@ -11,8 +11,7 @@
 
 body {
     font-family:Noto Sans;
-    margin-left:50px;
-    margin-right: 50px; 
+
     background: #000;
     color: white;
     font-size: 1.3rem;
@@ -23,7 +22,14 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    border-bottom: 3px solid var(--mor);
+    width: 100%;
+    position:fixed; 
+    top:0px; 
+    margin-left: 0px;
+    height:120px; 
+    background:var(--siyah);
+    z-index: 1000;
 }
 
 .language select{
@@ -39,7 +45,8 @@ header{
     font-family: sacramento;
     font-size: 4rem;
     color: var(--mor);
-    padding-left: 20px;
+    padding-left: 50px;
+ 
 }
 .mainmenu{
     display: flex;
@@ -47,6 +54,8 @@ header{
     justify-content: space-between;
     flex-wrap: wrap;
     border-bottom: 1px solid  rgb(39, 36, 36);
+    margin-left:50px;
+    margin-right: 50px; 
 }
 .mainmenu a,ul{
     text-decoration: none;
@@ -54,6 +63,11 @@ header{
     color:var(--mor);
     padding-left: 0px;
     padding: 20px, 60px;
+}
+
+.logo a{
+    text-decoration: none;
+    color:var(--mor);
 }
 
 .mainmenu a:hover{
@@ -65,27 +79,21 @@ header{
     margin-right: 0px;
     background-position: center;
     background-position: right 0px bottom 0px;
-    height: 400px;
+    height: 300px;
     display: flex;
-    border-top: 3px solid var();
-    border-bottom: 1px solid  rgb(39, 36, 36);
+    position: relative;
+    margin-top:110px;
 }
 
 .showcase p{
-    margin: auto;
+    margin: auto auto 20px 40px;
     font-size: 4rem;
     line-height: 6rem;
-}
-.motto{
-    color:#3b8ec2;
-}
-.motto2{
-    font-size: 2rem;
+    color: var(--mor);
 }
 
 footer{
     height: 200px;
-    
 }
 .social{
     display: flex;
@@ -96,7 +104,7 @@ footer{
 
 footer li{
     display: block;
-    margin:30px 30px;
+    margin:60px 30px;
 }
 
 .footer a:hover{
@@ -106,8 +114,7 @@ footer li{
 @media (max-width: 700px){
 
     body {
-        margin-left:20px;
-        margin-right: 20px; 
+
 
     }
 
@@ -118,12 +125,12 @@ footer li{
     }
       
     .showcase p{
-        margin: 0px;
+        margin-left: 20px;
         font-size: 2rem;
         line-height: 3rem;
     }
 
     .logo{
-        padding-left: 0px;
+        padding-left: 30px;
     }
 }
