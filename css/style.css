@@ -24,7 +24,7 @@ header{
     position:fixed; 
     top:0px; 
     margin-left: 0px;
-    height:120px; 
+    height:100px; 
     background:var(--siyah);
     z-index: 1000;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -186,7 +186,9 @@ footer li{
         margin:0px 10px; 
         align-items: center;
     }
-
+    .header{
+        height: 0px;
+    }
     .showcase{
         background: url("../img/fg2.png") no-repeat ;
         background-size: contain;
