@@ -91,7 +91,7 @@ header{
     height: 300px;
     display: flex;
     position: relative;
-    margin-top:110px;
+    margin:110px 50px auto 50px;
 }
 
 .showcase p{
@@ -116,13 +116,13 @@ footer{
 }
 
 
-footer li{
-    display: inline;
-    padding:60px 30px;
+footer i{
+    display: block;
+    margin:20px;
 }
 
-.footer a{
-    margin: 10px;
+footer li{
+    margin:10px;
 }
 
 .footer a:hover{
@@ -132,14 +132,15 @@ footer li{
 .copy{
     text-align: center;
     background: var(--hover);
-    height:40px;
+    height: 40px;
     font-size: 1rem;
     display: flex;
     align-items: center;
     margin-bottom: 0px;
 }
 .copy p{
-    margin: 30px auto;
+    margin: auto;
+    border: none;
 }
 /*Educationist Page_______________________________*/
 
@@ -200,7 +201,7 @@ footer li{
         margin-left: 10px;
         display: inline;
         font-size: 1.1rem;
-        marker: 12px;
+        marker: 
         line-height: 3rem;
     }
     .showcase span{
