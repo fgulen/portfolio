@@ -178,8 +178,7 @@ footer li{
 }
 
 
-@media (max-wid
-th: 700px){
+@media (max-width: 700px){
 
     .mainmenu{
         flex-direction: column;
