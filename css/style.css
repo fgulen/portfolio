@@ -5,7 +5,7 @@
 
 :root{
     --mor:#a05767;
-    --hover:#753240;
+    --hover:#642c38;
     --siyah:#000;
   }
 
@@ -18,7 +18,7 @@ body {
 }
 
 header{
-     border-bottom: 1px solid rgb(39, 36, 36);
+    border-bottom: 1px solid rgb(39, 36, 36);
     width: 100%;
     position:fixed; 
     top:0px; 
@@ -58,21 +58,19 @@ header{
     border-top: 1px solid rgb(39, 36, 36);
     border-bottom: 1px solid  rgb(39, 36, 36);
     margin:0px 50px; 
-    justify-content: center;
 }
-.mainmenu a,ul{
-    display: inline-block;
-    text-decoration: none;
-    list-style: none;
-    color:var(--mor);
+.mainmenu ul{
+    padding-left: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
-  
 }
 
 .mainmenu a{
-    padding-left: 0px;
-    padding: 15px 15px;  
+    display: inline-block;
+    margin: 15px 15px; 
+    text-decoration: none;
+    list-style: none;
+    color:var(--mor);
 }
 
 .logo a{
@@ -123,19 +121,27 @@ footer li{
 
 /*Educationist Page_______________________________*/
 
-.showcase2{
+.textarea{
+    background-position: center;
+    background-position: right 0px bottom 0px;
+    height: 300px;
+    display: flex;
+    position: relative;
+    margin-top:110px;
+}
+
+
+.textarea{
     height: auto;
     position: relative;
 }
-.showcase2 p{
+.textarea p{
     font-size: 1.2rem;
     line-height: 1.7rem;
-    padding-bottom: 40px;
-    padding-top: 180px;
-    margin: auto auto 20px 40px;
+    margin: 60px 40px 60px 40px;
     color: var(--mor);
 }
-.showcase2 span{
+.textarea span{
     font-weight: bold;
     color: rgb(7, 7, 7);
     letter-spacing: 0.05rem;
@@ -151,3 +157,29 @@ footer li{
 
 
 
+@media (max-width: 700px){
+
+    .mainmenu{
+        flex-direction: column;
+        margin:0px 10px; 
+        align-items: center;
+    }
+    
+    .mainmenu ul{
+        
+        
+    }
+    .showcase p{
+        margin-left: 20px;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .logo{
+        padding-left: 30px;
+    }
+
+    .textarea p {
+        margin: 60px 5px 60px 10px;
+    }
+}
