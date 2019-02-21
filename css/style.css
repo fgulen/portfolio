@@ -10,19 +10,15 @@
   }
 
 body {
-    font-family:Noto Sans;
-
-    background: #000;
+    font-family: Exo;
+    font-weight: 400;
+    background: rgb(252, 251, 251);
     color: white;
     font-size: 1.3rem;
 }
 
-
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 3px solid var(--mor);
+     border-bottom: 1px solid rgb(39, 36, 36);
     width: 100%;
     position:fixed; 
     top:0px; 
@@ -30,20 +26,26 @@ header{
     height:120px; 
     background:var(--siyah);
     z-index: 1000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.language select{
+.logowrap2{
+    display: flex;
+    justify-content: space-between;
+}
+/*.language select{
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
     background-color: var(--mor);
     color: white;
     border: none;
-}
+}*/
 
 .logo{
-    font-family: sacramento;
-    font-size: 4rem;
+    font-family: Satisfy;
+    font-size: 3rem;
+    font-weight: 100;
     color: var(--mor);
     padding-left: 50px;
  
@@ -53,16 +55,24 @@ header{
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    border-top: 1px solid rgb(39, 36, 36);
     border-bottom: 1px solid  rgb(39, 36, 36);
-    margin-left:50px;
-    margin-right: 50px; 
+    margin:0px 50px; 
+    justify-content: center;
 }
 .mainmenu a,ul{
+    display: inline-block;
     text-decoration: none;
     list-style: none;
     color:var(--mor);
+    margin-top: 0px;
+    margin-bottom: 0px;
+  
+}
+
+.mainmenu a{
     padding-left: 0px;
-    padding: 20px, 60px;
+    padding: 15px 15px;  
 }
 
 .logo a{
@@ -93,7 +103,7 @@ header{
 }
 
 footer{
-    height: 200px;
+   height: 200px;
 }
 .social{
     display: flex;
@@ -111,26 +121,33 @@ footer li{
     color:var(--hover); 
 }
 
-@media (max-width: 700px){
+/*Educationist Page_______________________________*/
 
-    body {
-
-
-    }
-
-    .mainmenu{
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: nowrap;
-    }
-      
-    .showcase p{
-        margin-left: 20px;
-        font-size: 2rem;
-        line-height: 3rem;
-    }
-
-    .logo{
-        padding-left: 30px;
-    }
+.showcase2{
+    height: auto;
+    position: relative;
 }
+.showcase2 p{
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    padding-bottom: 40px;
+    padding-top: 180px;
+    margin: auto auto 20px 40px;
+    color: var(--mor);
+}
+.showcase2 span{
+    font-weight: bold;
+    color: rgb(7, 7, 7);
+    letter-spacing: 0.05rem;
+}
+
+.language{
+    background: url("../img/fg.png") no-repeat ;
+    background-size: contain;
+    margin-right: 0px;
+    background-position: center;
+    background-position: right 0px bottom 0px;
+}
+
+
+
