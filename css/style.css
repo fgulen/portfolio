@@ -125,9 +125,21 @@ footer li{
 }
 
 .footer a:hover{
-    color:var(--hover); 
+    color:var(--hover);
 }
 
+.copy{
+    text-align: center;
+    background: var(--hover);
+    height:40px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+}
+.copy p{
+    margin: 30px auto;
+}
 /*Educationist Page_______________________________*/
 
 .textarea{
@@ -165,8 +177,8 @@ footer li{
 }
 
 
-
-@media (max-width: 700px){
+@media (max-wid
+th: 700px){
 
     .mainmenu{
         flex-direction: column;
