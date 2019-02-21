@@ -43,7 +43,7 @@ header{
 }*/
 
 .logo{
-    font-family: Satisfy;
+    font-family: exo;
     font-size: 3rem;
     font-weight: 100;
     color: var(--mor);
@@ -94,12 +94,16 @@ header{
 }
 
 .showcase p{
-    margin: auto auto 20px 40px;
-    font-size: 4rem;
-    line-height: 6rem;
+    font-family: Nanum Gothic Coding;
+    margin: auto auto auto 120px;
+    font-size: 2rem;
+    line-height: 4rem;
     color: var(--mor);
 }
-
+.showcase span{
+    color: #0175F4;
+    font-size: 1rem;
+}
 footer{
    height: 200px;
 }
@@ -110,9 +114,14 @@ footer{
     flex-wrap: wrap;
 }
 
+
 footer li{
-    display: block;
-    margin:60px 30px;
+    display: inline;
+    padding:60px 30px;
+}
+
+.footer a{
+    margin: 10px;
 }
 
 .footer a:hover{
@@ -164,22 +173,35 @@ footer li{
         margin:0px 10px; 
         align-items: center;
     }
-    
-    .mainmenu ul{
+
+    .showcase{
         
-        
+            background: url("../img/fg.png") no-repeat ;
+            background-size: contain;
+            margin-right: 0px;
+            background-position: center;
+            background-position: right 0px bottom 0px;
     }
+    
     .showcase p{
-        margin-left: 20px;
-        font-size: 2rem;
+        margin-left: 10px;
+        font-size: 1rem;
         line-height: 3rem;
     }
-
+    .showcase span{
+        color: #0175F4;
+        font-size: 0.8rem;
+    }
     .logo{
         padding-left: 30px;
     }
 
     .textarea p {
         margin: 60px 5px 60px 10px;
+    }
+
+    footer ul{
+        margin:0px 30px;
+        padding: 0px;
     }
 }
