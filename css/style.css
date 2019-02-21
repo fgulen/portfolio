@@ -188,11 +188,11 @@ footer li{
     }
 
     .showcase{
-        
         background: url("../img/fg2.png") no-repeat ;
         background-size: contain;
         height:200px;
         margin-right: 0px;
+        margin-left: 0px;
         background-position: center;
         background-position: right 0px bottom 0px;
     }
@@ -201,7 +201,6 @@ footer li{
         margin-left: 10px;
         display: inline;
         font-size: 1.1rem;
-        marker: 
         line-height: 3rem;
     }
     .showcase span{
