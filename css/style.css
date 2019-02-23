@@ -334,5 +334,31 @@ footer li{
         padding: 0px;
     }
 
+    .education{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .education :nth-child(1) { order: 1; }
+    .education :nth-child(2) { order: 2; }
+    .education :nth-child(3) { order: 4; }
+    .education :nth-child(4) { order: 6; }
+    .education :nth-child(5) { order: 3; }
+    .education :nth-child(6) { order: 5; }
+    .education :nth-child(7) { order: 7; }
+   
+    .experience{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .experience :nth-child(1) { order: 1; }
+    .experience :nth-child(2) { order: 2; }
+    .experience :nth-child(3) { order: 4; }
+    .experience :nth-child(4) { order: 6; }
+    .experience :nth-child(5) { order: 3; }
+    .experience :nth-child(6) { order: 5; }
+    .experience :nth-child(7) { order: 7; }
+   
 
 }
