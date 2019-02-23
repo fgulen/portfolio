@@ -4,7 +4,7 @@
 /*Global variables*/
 
 :root{
-    --mor:#a05767;
+    --mor:#763240;
     --hover:#642c38;
     --siyah:#000;
   }
@@ -135,10 +135,12 @@ header{
     display: flex;
     flex-direction: row;
     color: var(--mor);
-    background: lavender;
+    background: #D7CDC7;
     margin-top:100px;
     margin-bottom:100px;
     align-items: center;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .aboutme h1{
@@ -150,18 +152,20 @@ header{
 
 
 .education{
-    background: lavender;
+    background: #FDFDFD;
     margin-top:100px;
     margin-bottom:100px;
     color: var(--mor);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-row-gap: 20px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+
 }
 .education h4{
     padding: 20px;
 }
-.details0{
+.details{
     padding:20px;
 }
 .title{
@@ -171,7 +175,7 @@ header{
 }
 
 .one{
-    background: rgb(135, 135, 180);
+    background: #C3A181;
     height: 80px;
     justify-content: center;
     color:white;
@@ -180,13 +184,15 @@ header{
 /*experience ___________________________________________ experience __________________________________________ experience*/
 
 .experience{
-    background: lavender;
+    background: #FFFAF7;
     margin-top:100px;
     margin-bottom:100px;
     color: var(--mor);
     display: grid;
     grid-template-columns: 1fr 0.5 fr 3fr;
     align-items: stretch;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+
 
 
 }
@@ -292,6 +298,11 @@ footer li{
 
 
 @media (max-width: 700px){
+
+    .wrapper{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 
     .mainmenu{
         flex-direction: column;
