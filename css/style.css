@@ -354,11 +354,18 @@ footer li{
 
     .experience :nth-child(1) { order: 1; }
     .experience :nth-child(2) { order: 2; }
-    .experience :nth-child(3) { order: 4; }
-    .experience :nth-child(4) { order: 6; }
-    .experience :nth-child(5) { order: 3; }
-    .experience :nth-child(6) { order: 5; }
-    .experience :nth-child(7) { order: 7; }
+    .experience :nth-child(3) { order: 3; }
+    .experience :nth-child(4) { order: 4; }
+    .experience :nth-child(5) { order: 5; }
+    .experience :nth-child(6) { order: 6; }
+    .experience :nth-child(7) { order:7; }
+    .experience :nth-child(8) { order: 8; }
+    .experience :nth-child(9) { order: 9; }
+    .experience :nth-child(10) { order: 10; }
+    .experience :nth-child(11) { order: 11; }
+    .experience :nth-child(12) { order: 12; }
+    .experience :nth-child(13) { order: 13; }
+    .experience :nth-child(14) { order: 14; }
    
 
 }
