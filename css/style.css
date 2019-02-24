@@ -19,6 +19,9 @@ body {
     margin: 0px;
 }
 
+h2{
+    padding-left: 20px;
+}
 header{
     border-bottom: 1px solid rgb(39, 36, 36);
     width: 100%;
@@ -165,6 +168,7 @@ header{
 }
 .education h4{
     padding: 20px;
+    margin: 0px;
 }
 .details{
     padding:20px;
@@ -176,16 +180,15 @@ header{
 }
 
 .one{
-    background: #C3A181;
-    height: 80px;
+    background: #D7CDC7;
     justify-content: center;
-    color:white;
+    align-self: center;
+    
 }
 
 /*experience ___________________________________________ experience __________________________________________ experience*/
 
 .experience{
-    background: #FFFAF7;
     margin-top:100px;
     margin-bottom:100px;
     color: var(--mor);
@@ -211,14 +214,64 @@ header{
 
 .place{
    padding: 20px;
-    background: #C3A181;
-    color: white;
-    margin: 0px 20px;
+    background: #D7CDC7;
     height:180px ;
+    text-align: center;
+
 }
 
 .job, .job2 {
     height:auto ;
+    align-self:center;
+
+}
+
+
+
+.boxes{
+    display: grid;
+    text-align: center;
+    margin-bottom: 400px;
+    color:black;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+    grid-row-gap: 200px;
+}
+
+
+.sertificates{
+    background: #C3A181;
+    margin-top:200px;
+    margin-bottom:-200px;
+
+}
+
+.seminars{
+    background: rgb(87, 55, 26);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.photograpy{
+    background: rgb(214, 192, 170);
+    margin-top:150px;
+    margin-bottom:-150px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+
+.drawing{
+    background: rgb(207, 185, 164);
+    margin-top:150px;
+    margin-bottom:-150px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+
+}
+.editing{
+    background: rgb(43, 33, 25);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 /*footer ___________________________________________ footer __________________________________________ footer*/
@@ -248,7 +301,7 @@ footer li{
 
 .copy{
     text-align: center;
-    background: var(--hover);
+    color: var(--hover);
     height: 40px;
     font-size: 1rem;
     display: flex;
@@ -289,13 +342,6 @@ footer li{
     letter-spacing: 0.05rem;
 }
 
-.language{
-    background: url("../img/fg.png") no-repeat ;
-    background-size: contain;
-    margin-right: 0px;
-    background-position: center;
-    background-position: right 0px bottom 0px;
-}
 
 
 @media (max-width: 700px){
