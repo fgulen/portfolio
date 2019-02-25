@@ -142,16 +142,20 @@ header{
     background: #D7CDC7;
     margin-top:100px;
     margin-bottom:100px;
-    align-items: center;
+    align-items: stretch;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
-
 }
 
-.aboutme h1{
+.aboutme h2{
     transform: rotate(0.75turn);
+    
 }
 
-
+.abt{
+    background: white;
+    display:flex;
+    align-items:  flex-end;
+}
 /*education ___________________________________________ education __________________________________________ education*/
 
 
@@ -174,12 +178,15 @@ header{
     grid-column: span 3;
     height:100px ;
     line-height: rem;
+  
+
 }
 
 .one{
     background: #D7CDC7;
     justify-content: center;
-    align-self: center;
+    display: flex;
+    align-items: stretch;
 }
 .education h4{
     padding-left: 70px;
