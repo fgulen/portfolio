@@ -160,11 +160,11 @@ header{
     margin-top:100px;
     margin-bottom:10px;
     color: var(--mor);
+    align-items: stretch;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-row-gap: 20px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
-
 }
 
 .details{
@@ -180,7 +180,10 @@ header{
     background: #D7CDC7;
     justify-content: center;
     align-self: center;
-    
+}
+.education h4{
+    padding-left: 70px;
+    padding-right: 70px;
 }
 
 /*experience ___________________________________________ experience __________________________________________ experience*/
@@ -200,6 +203,7 @@ header{
 .job2{
     grid-row: span 2;
     display: inline-block;
+    text-transform: uppercase;
 }
 
 .teacher{
