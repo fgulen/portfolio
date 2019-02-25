@@ -158,7 +158,7 @@ header{
 .education{
     background: #FDFDFD;
     margin-top:100px;
-    margin-bottom:100px;
+    margin-bottom:10px;
     color: var(--mor);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -167,7 +167,7 @@ header{
 
 }
 .education h4{
-    padding: 20px;
+    padding: 15px 150px;
     margin: 0px;
 }
 .details{
@@ -215,7 +215,6 @@ header{
 .place{
    padding: 20px;
     background: #D7CDC7;
-    height:180px ;
     text-align: center;
 
 }
