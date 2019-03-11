@@ -12,11 +12,11 @@
 body {
     font-family: Exo;
     font-weight: 400;
-    background: rgb(252, 251, 251);
     color: white;
     font-size: 1.3rem;
     line-height: 2.5rem;
     margin: 0px;
+    background: #E9E9E9;
 }
 
 h2{
@@ -108,11 +108,10 @@ header{
 
 .showcase{
     background: url("../img/fg.png") no-repeat ;
-    background-size: contain;
+    background-size: 200px ;
     margin-right: 0px;
-    background-position: center;
-    background-position: right 0px bottom 0px;
-    height: 300px;
+    background-position: right 0px top 0px;
+    height: 400px;
     display: flex;
     position: relative;
     margin-top:110px;
@@ -148,7 +147,7 @@ header{
 
 .aboutme h2{
     transform: rotate(0.75turn);
-    
+    padding-bottom: 50px;
 }
 
 .abt{
@@ -196,6 +195,7 @@ header{
 /*experience ___________________________________________ experience __________________________________________ experience*/
 
 .experience{
+    background: #FDFDFD;
     margin-top:100px;
     margin-bottom:100px;
     color: var(--mor);
@@ -217,7 +217,10 @@ header{
     grid-row: span 2;
 }
 .place p{
-    transform: rotate(0.75turn);    
+    display: block;
+    transform: rotate(0.75turn);
+    font-weight:  bold;  
+    padding-right: 20px;
 }
 
 .place{
@@ -233,52 +236,71 @@ header{
 
 }
 
+.intro{
+    position: relative;
+    display: inline-block;
+}
 
+.intro::before{
+    content: '';
+    height: 100%;
+    display: block;
+}
 
+.intro::after{
+    content: '';
+    height: 100%;
+    display: block;
+}
 .boxes{
     display: grid;
     text-align: center;
-    margin-bottom: 400px;
+    padding-bottom: 200px;
     color:black;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-rows: 200px;
     grid-row-gap: 200px;
+    grid-column-gap: 20px;
+    
 }
 
+.box{
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+    background: #FDFDFD;
+}
 
+.boxes :hover{
+    background:var(--mor);
+    opacity: 0.9;
+    color:white;
+
+}
+  
 .sertificates{
-    background: #C3A181;
     margin-top:200px;
     margin-bottom:-200px;
 
 }
 
 .seminars{
-    background: rgb(87, 55, 26);
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
 
 }
 
 .photograpy{
-    background: rgb(214, 192, 170);
     margin-top:150px;
     margin-bottom:-150px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
-
-
 }
 
 .drawing{
-    background: rgb(207, 185, 164);
-    margin-top:150px;
-    margin-bottom:-150px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
 
 }
 .editing{
-    background: rgb(43, 33, 25);
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
-
+    margin-top:200px;
+    margin-bottom:-200px;
 }
 
 /*footer ___________________________________________ footer __________________________________________ footer*/
@@ -300,6 +322,7 @@ footer i{
 
 footer li{
     margin:10px;
+    list-style: none;
 }
 .footer a:hover{
     color:var(--hover);
@@ -356,6 +379,7 @@ footer li{
     .wrapper{
         margin-left: 10px;
         margin-right: 10px;
+        
     }
 
     .mainmenu{
@@ -366,15 +390,7 @@ footer li{
     .header{
         height: 0px;
     }
-    .showcase{
-        background: url("../img/fg2.png") no-repeat ;
-        background-size: contain;
-        height:200px;
-        margin-right: 0px;
-        margin-left: 0px;
-        background-position: center;
-        background-position: right 0px bottom 0px;
-    }
+   
     
     .showcase p{
         margin-left: 10px;
@@ -432,5 +448,25 @@ footer li{
     .experience :nth-child(13) { order: 13; }
     .experience :nth-child(14) { order: 14; }
    
+    .place p{
+        transform: none;
+         
+    }
 
+    .aboutme{
+
+        flex-direction: column;}
+    .aboutme h2{
+        transform: none;
+    }
+
+
+    .boxes{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box{
+        margin: 10px;
+    }
 }
