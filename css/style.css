@@ -269,6 +269,11 @@ header{
     background: #FDFDFD;
 }
 
+.box h3{
+    display: inline-block;
+    padding-top: auto;
+    padding-bottom: auto;
+}
 .boxes :hover{
     background:var(--mor);
     opacity: 0.9;
@@ -395,7 +400,6 @@ footer li{
     .showcase p{
         margin-left: 10px;
         display: inline;
-        font-size: 1.1rem;
         line-height: 3rem;
     }
     .showcase span{
