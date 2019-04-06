@@ -4,25 +4,29 @@
 /*Global variables*/
 
 :root{
-    --mor:#763240;
+    --mor:#1D5161;
     --hover:#642c38;
     --siyah:#000;
-  }
+    --gri:#D7CDC7;
+    --color5:rgb(252, 247, 247);
+}
 
 body {
     font-family: Exo;
     font-weight: 400;
-    color: white;
+    color: rgb(190, 187, 187);
     font-size: 1.3rem;
     line-height: 2.5rem;
     margin: 0px;
-    background: #E9E9E9;
+    background: rgb(221, 216, 216);
 }
 
 h2{
     padding-left: 20px;
 }
 header{
+    display: flex;
+    justify-content: space-between;
     border-bottom: 1px solid rgb(39, 36, 36);
     width: 100%;
     position:fixed; 
@@ -32,20 +36,21 @@ header{
     background:var(--siyah);
     z-index: 1000;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: auto 60px;
 }
 
-.logowrap2{
-    display: flex;
-    justify-content: space-between;
-}
-/*.language select{
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
+.language{
+    margin-right: 140px;
+    padding: 0px;
     border-radius: 2px;
-    background-color: var(--mor);
-    color: white;
+    color:var(--color5);
     border: none;
-}*/
+    margin-top: 18px;
+}
+select{
+    background: #1D5161;
+    color: beige;
+}
 
 .logo{
     margin: 18px auto; 
@@ -65,21 +70,65 @@ header{
     margin-left: auto;
     margin-right: auto;
 }
+
+/*showcase ___________________________________________ showcase __________________________________________ showcase*/
+
+.showcase{
+    background: url("../img/bg.jpg") no-repeat ;
+    background-size: cover;
+    height: 450px;
+    /*background-size: 300px ;
+    margin-right: 0px;
+    background-position: left 0px bottom 20px; 
+    height: 400px;
+    display: flex;
+    position: relative;
+    margin-top:110px;*/
+}
+
+.profilo{
+    position: absolute;
+    height: 300px;
+    margin-top: 150px;
+    margin-left: 60px;
+}
+
+.showcase p{
+    font-family: Nanum Gothic Coding;
+    position: absolute;
+    padding: 20px 100px;
+    margin-top: 200px;
+    margin-left: 500px;
+    background: white;
+    opacity: 0.6;
+    font-size: 2rem;
+    line-height: 4rem;
+    color: var(--mor);
+    border-radius: 2px;
+}
+.showcase span{
+    color: #0175F4;
+    font-size: 1rem;
+}
+
 /*mainmenu ___________________________________________ mainmenu __________________________________________ mainmenu*/
 
-
 .mainmenu{
+    margin-top: 30px;
+    background: var(--color5);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
-
-    
-   
+ 
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19); 
 }
 .mainmenu ul{
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    flex-wrap: wrap;
+}
+.mainmenu li{
     padding-left: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -95,50 +144,56 @@ header{
     padding: 10px;
 }
 .mainmenu a:hover{
-    color:var(--hover);  
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px 0.5px var(--hover);
 }
 .current a{
     background: var(--mor);
-    color: white;
+    color:var(--color5);
     padding: 10px;
     border-radius: 2px;
 }
 
-/*showcase ___________________________________________ showcase __________________________________________ showcase*/
+/*pic ___________________________________________ pic __________________________________________ pic*/
 
-.showcase{
-    background: url("../img/fg.png") no-repeat ;
-    background-size: 200px ;
-    margin-right: 0px;
-    background-position: right 0px top 0px;
-    height: 400px;
+.pic{
     display: flex;
-    position: relative;
-    margin-top:110px;
+	flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
 }
 
-.showcase p{
-    font-family: Nanum Gothic Coding;
-    margin: auto auto auto 120px;
-    font-size: 2rem;
-    line-height: 4rem;
-    color: var(--mor);
-}
-.showcase span{
-    color: #0175F4;
-    font-size: 1rem;
+.pictures{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
 }
 
+.pic img{
+    width: 500px;
+    padding: .4rem;
+    max-width: 100%; 
+    max-height: 450px;
+    flex: 1 1 auto; 
+    
+}
 
+.pic img:hover {
+    opacity: 0.5;
+	transition: 500ms;
+	transform: scale(1.02);
+
+}
 
 /*aboutme ___________________________________________ aboutme __________________________________________ aboutme*/
-
 
 .aboutme{
     display: flex;
     flex-direction: row;
     color: var(--mor);
-    background: #D7CDC7;
+    background: var(--gri);
     margin-top:100px;
     margin-bottom:100px;
     align-items: stretch;
@@ -147,42 +202,39 @@ header{
 
 .aboutme h2{
     transform: rotate(0.75turn);
-    padding-bottom: 50px;
+    padding-left: 0px;
 }
 
 .abt{
-    background: white;
+    background: var(--color5);
     display:flex;
-    align-items:  flex-end;
+    align-items: center;
 }
 /*education ___________________________________________ education __________________________________________ education*/
 
-
 .education{
-    background: #FDFDFD;
+    background:var(--color5);
     margin-top:100px;
     margin-bottom:10px;
     color: var(--mor);
     align-items: stretch;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-row-gap: 20px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
 }
 
 .details{
     padding:20px;
+    border-bottom:0.5px solid rgb(218, 212, 212);
+    border-left: 0.5px solid rgb(218, 212, 212);
 }
 .title{
     grid-column: span 3;
     height:100px ;
-    line-height: rem;
-  
-
 }
 
 .one{
-    background: #D7CDC7;
+    background: var(--gri);;
     justify-content: center;
     display: flex;
     align-items: stretch;
@@ -195,17 +247,14 @@ header{
 /*experience ___________________________________________ experience __________________________________________ experience*/
 
 .experience{
-    background: #FDFDFD;
+    background: var(--color5);
     margin-top:100px;
     margin-bottom:100px;
     color: var(--mor);
     display: grid;
-    grid-template-columns: 1fr 0.5 fr 3fr;
+    grid-template-columns: 1fr 0.5fr 3fr;
     align-items: stretch;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
-
-
-
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
 }
 .job2{
     grid-row: span 2;
@@ -217,95 +266,29 @@ header{
     grid-row: span 2;
 }
 .place p{
-    display: block;
     transform: rotate(0.75turn);
-    font-weight:  bold;  
-    padding-right: 20px;
-}
-
-.place{
-   padding: 20px;
-    background: #D7CDC7;
+    font-weight:  bold; 
     text-align: center;
-
+}
+.germany{
+    padding: 15px; 
+}
+.place{
+    background: var(--gri);
+    display: flex;
+    align-items: center;
 }
 
 .job, .job2 {
     height:auto ;
     align-self:center;
+    justify-items: center;
 
 }
 
 .intro{
     position: relative;
     display: inline-block;
-}
-
-.intro::before{
-    content: '';
-    height: 100%;
-    display: block;
-}
-
-.intro::after{
-    content: '';
-    height: 100%;
-    display: block;
-}
-.boxes{
-    display: grid;
-    text-align: center;
-    padding-bottom: 200px;
-    color:black;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    grid-template-rows: 200px;
-    grid-row-gap: 200px;
-    grid-column-gap: 20px;
-    
-}
-
-.box{
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
-    background: #FDFDFD;
-}
-
-.box h3{
-    display: inline-block;
-    padding-top: auto;
-    padding-bottom: auto;
-}
-.boxes :hover{
-    background:var(--mor);
-    opacity: 0.9;
-    color:white;
-
-}
-  
-.sertificates{
-    margin-top:200px;
-    margin-bottom:-200px;
-
-}
-
-.seminars{
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
-
-}
-
-.photograpy{
-    margin-top:150px;
-    margin-bottom:-150px;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
-}
-
-.drawing{
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
-
-}
-.editing{
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
-    margin-top:200px;
-    margin-bottom:-200px;
 }
 
 /*footer ___________________________________________ footer __________________________________________ footer*/
@@ -330,13 +313,14 @@ footer li{
     list-style: none;
 }
 .footer a:hover{
-    color:var(--hover);
+    color:white;
+    cursor: pointer;
 }
 /*experience ___________________________________________ experience __________________________________________ experience*/
 
 .copy{
     text-align: center;
-    color: var(--hover);
+    color: var(--mor);
     height: 40px;
     font-size: 1rem;
     display: flex;
@@ -378,33 +362,59 @@ footer li{
 }
 
 
+ /* Nexus 5  360x640*/
 
-@media (max-width: 700px){
+ @media (max-width: 360px){
 
+    header{
+        position: relative; 
+    }
+    
     .wrapper{
         margin-left: 10px;
         margin-right: 10px;
-        
     }
 
-    .mainmenu{
+    .mainmenu ul{
         flex-direction: column;
-        margin:0px 10px; 
         align-items: center;
     }
     .header{
         height: 0px;
     }
+
+    .language{
+        margin-right: 10px;
+    }
    
+    .showcase{
+        height: 500px;
+    }
     
     .showcase p{
-        margin-left: 10px;
-        display: inline;
-        line-height: 3rem;
+        margin-top: 120px;
+        margin-left: 0px;
+        padding: 0px 20px;
+        margin-right: 0px;
+        line-height: 2.5rem;
+        width: 100%;
     }
     .showcase span{
         color: #0175F4;
-        font-size: 0.8rem;
+        font-size: 1rem;
+    }
+
+    .profilo{
+        height: 330px;
+        margin-top: 200px;
+        margin-left: 0px;
+    }
+
+    .aboutme h2 {
+        padding-left: 15px;
+    }
+    .pic {
+        flex-direction: column;    
     }
     .logo{
         padding-left: 30px;
@@ -454,19 +464,22 @@ footer li{
    
     .place p{
         transform: none;
+        text-align: center;
          
     }
 
-    .aboutme{
+    .place {
+        display: block;
+    }
 
-        flex-direction: column;}
+    .aboutme{
+        flex-direction: column;
+    }
     .aboutme h2{
         transform: none;
     }
-
-
     .boxes{
-        display: flex;
+        display: none;
         flex-direction: column;
     }
 
