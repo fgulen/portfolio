@@ -368,6 +368,7 @@ footer li{
 
     header{
         position: relative; 
+        width: 100%;
     }
     
     .wrapper{
@@ -394,10 +395,9 @@ footer li{
     .showcase p{
         margin-top: 120px;
         margin-left: 0px;
-        padding: 0px 20px;
+        padding: 0px 24px;
         margin-right: 0px;
         line-height: 2.5rem;
-        width: 100%;
     }
     .showcase span{
         color: #0175F4;
