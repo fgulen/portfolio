@@ -1,19 +1,14 @@
 @import "/css/normalize.css";
-@import "/css/responsive.css";
 
 /*Global variables*/
 
 :root{
-    --mor:#1D5161;
-    --hover:#642c38;
-    --siyah:#000;
-    --gri:#D7CDC7;
+    --color1:#1D5161;
+    --color2:#642c38;
+    --color3:#000;
+    --color4:#D7CDC7;
     --color5:rgb(252, 247, 247);
 }
-
-
-
-
 
 body {
     font-family: Exo;
@@ -37,10 +32,9 @@ header{
     top:0px; 
     margin-left: 0px;
     height:80px; 
-    background:var(--siyah);
+    background:var(--color3);
     z-index: 1000;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: auto 60px;
 }
 
 .language{
@@ -61,12 +55,12 @@ select{
     font-family: exo;
     font-size: 3rem;
     font-weight: 100;
-    color: var(--mor);
+    color: var(--color1);
     padding-left: 140px;
 }
 .logo a{
     text-decoration: none;
-    color:var(--mor);
+    color:var(--color1);
 }
 
 .wrapper{
@@ -102,17 +96,17 @@ select{
     position: absolute;
     padding: 20px 100px;
     margin-top: 200px;
-    margin-left: 500px;
+    margin-left: 40vw;
     background: white;
-    opacity: 0.6;
-    font-size: 2rem;
-    line-height: 4rem;
-    color: var(--mor);
+    opacity: 0.4;
+    font-size: 3vw;
+    line-height: 5vw;
+    color: var(--color1);
     border-radius: 2px;
 }
 .showcase span{
-    color: #0175F4;
-    font-size: 1rem;
+    color: rgb(1, 244, 41);
+    font-size: 2rem;
 }
 
 /*mainmenu ___________________________________________ mainmenu __________________________________________ mainmenu*/
@@ -144,15 +138,15 @@ select{
     margin: 10px 15px; 
     text-decoration: none;
     list-style: none;
-    color:var(--mor);
+    color:var(--color1);
     padding: 10px;
 }
 .mainmenu a:hover{
     font-weight: bold;
-    text-shadow: 0.5px 0.5px 0.5px var(--hover);
+    text-shadow: 0.5px 0.5px 0.5px var(--color2);
 }
 .current a{
-    background: var(--mor);
+    background: var(--color1);
     color:var(--color5);
     padding: 10px;
     border-radius: 2px;
@@ -196,8 +190,8 @@ select{
 .aboutme{
     display: flex;
     flex-direction: row;
-    color: var(--mor);
-    background: var(--gri);
+    color: var(--color1);
+    background: var(--color4);
     margin-top:100px;
     margin-bottom:100px;
     align-items: stretch;
@@ -220,7 +214,7 @@ select{
     background:var(--color5);
     margin-top:100px;
     margin-bottom:10px;
-    color: var(--mor);
+    color: var(--color1);
     align-items: stretch;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -238,7 +232,7 @@ select{
 }
 
 .one{
-    background: var(--gri);;
+    background: var(--color4);;
     justify-content: center;
     display: flex;
     align-items: stretch;
@@ -254,7 +248,7 @@ select{
     background: var(--color5);
     margin-top:100px;
     margin-bottom:100px;
-    color: var(--mor);
+    color: var(--color1);
     display: grid;
     grid-template-columns: 1fr 0.5fr 3fr;
     align-items: stretch;
@@ -278,7 +272,7 @@ select{
     padding: 15px; 
 }
 .place{
-    background: var(--gri);
+    background: var(--color4);
     display: flex;
     align-items: center;
 }
@@ -324,7 +318,7 @@ footer{
 
  .copy{
     text-align: center;
-    color: var(--mor);
+    color: var(--color1);
     height: 40px;
     font-size: 1rem;
     display: flex;
@@ -348,6 +342,14 @@ footer{
        margin-left: 300px;
    }
 
+   .showcase{
+    height: 400px;
+    }
+
+    .profilo{
+    height: 200px;
+    }
+
    .logo{
         font-size: 2rem;
         padding-left: 15px;
@@ -356,7 +358,9 @@ footer{
     .language{
         margin-right: 15px;
     }
-
+    .mainmenu {
+        margin-top: 3px;
+    }
     .mainmenu ul{
         padding:0px;
         font-size: 1.1rem;
@@ -370,7 +374,6 @@ footer{
     }
     .job2{
         text-transform: capitalize;
-        font-size: 1.2 rem;
     }
    }
 
