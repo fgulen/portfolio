@@ -343,27 +343,35 @@ footer{
 
  @media (max-width: 768px){
     .showcase p {
-   
        padding: 0px 40px;
        margin-top: 200px;
        margin-left: 300px;
-    
    }
 
    .logo{
         font-size: 2rem;
         padding-left: 15px;
-        }
+    }
 
     .language{
         margin-right: 15px;
     }
-   
+
+    .mainmenu ul{
+        padding:0px;
+        font-size: 1.1rem;
+    }
+    .mainmenu a{
+        margin: 2px 2px;
+    }
     .aboutme, .education, .experience, .pic {
         margin-top: 30px;
         margin-bottom: 30px;
     }
-
+    .job2{
+        text-transform: capitalize;
+        font-size: 1.2 rem;
+    }
    }
 
  /* _______________________________________________Nexus 5  360x640*/
@@ -387,10 +395,15 @@ footer{
         margin-right: 0px;
     }
 
+    .mainmenu{
+        display: block;
+    }
+
     .mainmenu ul{
         flex-direction: column;
         align-items: center;
     }
+
     .header{
         height: 0px;
     }
