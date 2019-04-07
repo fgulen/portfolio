@@ -45,6 +45,7 @@ header{
     border: none;
     margin-top: 18px;
 }
+
 select{
     background: #1D5161;
     color: beige;
@@ -141,10 +142,12 @@ select{
     color:var(--color1);
     padding: 10px;
 }
+
 .mainmenu a:hover{
     font-weight: bold;
     text-shadow: 0.5px 0.5px 0.5px var(--color2);
 }
+
 .current a{
     background: var(--color1);
     color:var(--color5);
@@ -175,14 +178,12 @@ select{
     max-width: 100%; 
     max-height: 450px;
     flex: 1 1 auto; 
-    
 }
 
 .pic img:hover {
     opacity: 0.5;
 	transition: 500ms;
 	transform: scale(1.02);
-
 }
 
 /*aboutme ___________________________________________ aboutme __________________________________________ aboutme*/
@@ -263,14 +264,17 @@ select{
 .teacher{
     grid-row: span 2;
 }
+
 .place p{
     transform: rotate(0.75turn);
     font-weight:  bold; 
     text-align: center;
 }
+
 .germany{
     padding: 15px; 
 }
+
 .place{
     background: var(--color4);
     display: flex;
@@ -288,35 +292,35 @@ select{
     display: inline-block;
 }
 
-
-
 /*footer ___________________________________________ footer __________________________________________ footer*/
 
 footer{
     height: 200px;
  }
- .social{
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     flex-wrap: wrap;
- }
- 
- footer i{
-     display: block;
-     margin:20px;
- }
- 
- footer li{
-     margin:10px;
-     list-style: none;
- }
- .footer a:hover{
-     color:white;
-     cursor: pointer;
- }
 
- .copy{
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+ 
+footer i{
+    display: block;
+    margin:20px;
+}
+ 
+footer li{
+    margin:10px;
+    list-style: none;
+}
+
+.footer a:hover{
+    color:white;
+    cursor: pointer;
+}
+
+.copy{
     text-align: center;
     color: var(--color1);
     height: 40px;
@@ -325,42 +329,44 @@ footer{
     align-items: center;
     margin-bottom: 0px;
 }
+
 .copy p{
     margin: auto;
     border: none;
     padding-bottom: 0px;
-
 }
 
 
- /* _______________________________________________Ipad  768x1024*/
+/* _______________________________________________Ipad  768x1024*/
 
- @media (max-width: 768px){
+@media (max-width: 768px){
     .showcase p {
-       padding: 0px 40px;
-       margin-top: 200px;
-       margin-left: 300px;
-   }
-
-   .showcase{
-    height: 400px;
+        margin-top: 200px;
+        margin-left: 300px;
+        padding: 0px 40px;
+    }
+    
+    .showcase{
+        height: 400px;
     }
 
     .profilo{
-    height: 200px;
+        height: 200px;
     }
 
-   .logo{
+    .logo{
         font-size: 2rem;
         padding-left: 15px;
     }
 
     .language{
         margin-right: 15px;
-    }
+        }
+        
     .mainmenu {
         margin-top: 3px;
     }
+        
     .mainmenu ul{
         padding:0px;
         font-size: 1.1rem;
@@ -372,148 +378,155 @@ footer{
         margin-top: 30px;
         margin-bottom: 30px;
     }
+        
     .job2{
         text-transform: capitalize;
     }
-   }
+}
 
  /* _______________________________________________Nexus 5  360x640*/
 
- @media (max-width: 360px){
-     body{
-         background:#061E25;
-     }
+@media (max-width: 360px){
+    body{
+        background:#061E25;
+    }
 
     header{
-        position: relative; 
-        width: 100%;
+       position: relative; 
+       width: 100%;
     }
+
     .logo{
-        font-size: 2rem;
-        padding-left: 20px;
+       font-size: 2rem;
+       padding-left: 20px;
     }
-    
+   
     .wrapper{
-        margin-left: 0px;
-        margin-right: 0px;
+       margin-left: 0px;
+       margin-right: 0px;
     }
 
     .mainmenu{
-        display: block;
+       display: block;
     }
 
     .mainmenu ul{
-        flex-direction: column;
-        align-items: center;
+       flex-direction: column;
+       align-items: center;
     }
 
     .header{
-        height: 0px;
+       height: 0px;
     }
 
     .language{
-        margin-right: 10px;
+       margin-right: 10px;
     }
 
     select{
-        height: 35px;
-        width: 50px;
-        border: none;
-        border-radius: 2px;
+       height: 35px;
+       width: 50px;
+       border: none;
+       border-radius: 2px;
+    }
+  
+    .showcase{
+       height: 500px;
     }
    
-    .showcase{
-        height: 500px;
-    }
-    
     .showcase p{
-        margin-top: 120px;
-        margin-left: 2px;
-        padding: 2px 50px;
-        line-height: 2.5rem;
-        font-size: 1.6rem;
+       margin-top: 120px;
+       margin-left: 2px;
+       padding: 2px 50px;
+       line-height: 2.5rem;
+       font-size: 1.6rem;
     }
     .showcase span{
-        color: #0175F4;
-        font-size: 1rem;
+       color: #0175F4;
+       font-size: 1rem;
     }
 
     .profilo{
-        height: 330px;
-        margin-top: 200px;
-        margin-left: 0px;
+       height: 300px;
+       margin-top: 200px;
+       margin-left: 0px;
     }
 
     .aboutme h2 {
-        padding-left: 15px;
+       padding-left: 15px;
     }
+
     .pic {
-        flex-direction: column;    
+       flex-direction: column;    
     }
     .logo{
-        padding-left: 30px;
+       padding-left: 30px;
     }
 
     .textarea p {
-        margin: 60px 5px 60px 10px;
+       margin: 60px 5px 60px 10px;
     }
 
     footer ul{
-        margin:0px 30px;
-        padding: 0px;
+       margin:0px 30px;
+       padding: 0px;
     }
 
     .education{
-        display: flex;
-        flex-direction: column;
+       display: flex;
+       flex-direction: column;
     }
 
-    .education :nth-child(1) { order: 1; }
-    .education :nth-child(2) { order: 2; }
-    .education :nth-child(3) { order: 4; }
-    .education :nth-child(4) { order: 6; }
-    .education :nth-child(5) { order: 3; }
-    .education :nth-child(6) { order: 5; }
-    .education :nth-child(7) { order: 7; }
-   
+   .education :nth-child(1) { order: 1; }
+   .education :nth-child(2) { order: 2; }
+   .education :nth-child(3) { order: 4; }
+   .education :nth-child(4) { order: 6; }
+   .education :nth-child(5) { order: 3; }
+   .education :nth-child(6) { order: 5; }
+   .education :nth-child(7) { order: 7; }
+  
     .experience{
-        display: flex;
-        flex-direction: column;
+       display: flex;
+       flex-direction: column;
     }
-    .experience :nth-child(1) { order: 1; }
-    .experience :nth-child(2) { order: 2; }
-    .experience :nth-child(3) { order: 3; }
-    .experience :nth-child(4) { order: 4; }
-    .experience :nth-child(5) { order: 5; }
-    .experience :nth-child(6) { order: 6; }
-    .experience :nth-child(7) { order:7; }
-    .experience :nth-child(8) { order: 8; }
-    .experience :nth-child(9) { order: 9; }
-    .experience :nth-child(10) { order: 10; }
-    .experience :nth-child(11) { order: 11; }
-    .experience :nth-child(12) { order: 12; }
-    .experience :nth-child(13) { order: 13; }
-    .experience :nth-child(14) { order: 14; }
-   
+   .experience :nth-child(1) { order: 1; }
+   .experience :nth-child(2) { order: 2; }
+   .experience :nth-child(3) { order: 3; }
+   .experience :nth-child(4) { order: 4; }
+   .experience :nth-child(5) { order: 5; }
+   .experience :nth-child(6) { order: 6; }
+   .experience :nth-child(7) { order:7; }
+   .experience :nth-child(8) { order: 8; }
+   .experience :nth-child(9) { order: 9; }
+   .experience :nth-child(10) { order: 10; }
+   .experience :nth-child(11) { order: 11; }
+   .experience :nth-child(12) { order: 12; }
+   .experience :nth-child(13) { order: 13; }
+   .experience :nth-child(14) { order: 14; }
+  
     .place p{
-        transform: none;
-        text-align: center;  
+       transform: none;
+       text-align: center;  
     }
+
     .place {
-        display: block;
+       display: block;
     }
-    .aboutme{
-        flex-direction: column;
+
+   .aboutme{
+       flex-direction: column;
     }
     .aboutme h2{
-        transform: none;
+       transform: none;
     }
+
     .boxes{
-        display: none;
-        flex-direction: column;
+       display: none;
+       flex-direction: column;
     }
+   
     .box{
-        margin: 10px;
-    }
+       margin: 10px;
+    } 
 
 }
