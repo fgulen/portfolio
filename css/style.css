@@ -361,7 +361,14 @@ footer li{
 
     .language{
         margin-right: 15px;
-        }
+    }
+
+    select{
+        height: 35px;
+        width: 50px;
+        border: none;
+        border-radius: 2px;
+    }
         
     .mainmenu {
         margin-top: 3px;
@@ -371,9 +378,11 @@ footer li{
         padding:0px;
         font-size: 1.1rem;
     }
+
     .mainmenu a{
         margin: 2px 2px;
     }
+
     .aboutme, .education, .experience, .pic {
         margin-top: 30px;
         margin-bottom: 30px;
@@ -421,13 +430,6 @@ footer li{
 
     .language{
        margin-right: 10px;
-    }
-
-    select{
-       height: 35px;
-       width: 50px;
-       border: none;
-       border-radius: 2px;
     }
   
     .showcase{
