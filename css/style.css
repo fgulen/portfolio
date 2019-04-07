@@ -11,6 +11,10 @@
     --color5:rgb(252, 247, 247);
 }
 
+
+
+
+
 body {
     font-family: Exo;
     font-weight: 400;
@@ -331,7 +335,36 @@ footer{
     margin: auto;
     border: none;
     padding-bottom: 0px;
+
 }
+
+
+ /* _______________________________________________Ipad  768x1024*/
+
+ @media (max-width: 768px){
+    .showcase p {
+   
+       padding: 0px 40px;
+       margin-top: 200px;
+       margin-left: 300px;
+    
+   }
+
+   .logo{
+        font-size: 2rem;
+        padding-left: 15px;
+        }
+
+    .language{
+        margin-right: 15px;
+    }
+   
+    .aboutme, .education, .experience, .pic {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+   }
 
  /* _______________________________________________Nexus 5  360x640*/
 
@@ -344,10 +377,14 @@ footer{
         position: relative; 
         width: 100%;
     }
+    .logo{
+        font-size: 2rem;
+        padding-left: 20px;
+    }
     
     .wrapper{
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     .mainmenu ul{
