@@ -107,7 +107,7 @@ select{
 }
 .showcase span{
     color: rgb(1, 244, 41);
-    font-size: 2rem;
+    font-size: 2vw;
 }
 
 /*mainmenu ___________________________________________ mainmenu __________________________________________ mainmenu*/
@@ -351,7 +351,7 @@ footer li{
     }
 
     .profilo{
-        height: 200px;
+        height: 250px;
     }
 
     .logo{
@@ -439,13 +439,9 @@ footer li{
     .showcase p{
        margin-top: 120px;
        margin-left: 2px;
-       padding: 2px 50px;
+       padding: 2px 58px;
        line-height: 2.5rem;
        font-size: 1.6rem;
-    }
-    .showcase span{
-       color: #0175F4;
-       font-size: 1rem;
     }
 
     .profilo{
