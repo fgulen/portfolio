@@ -1,0 +1,47 @@
+1.Which department pays the highest salary currently and who is the department manager?
+
+SELECT d.dept_name, e.first_name, e.last_name
+FROM departments d
+JOIN dept_manager dm on d.dept_no=dm.dept_no
+JOIN employes e on dm.emp_no=e.emp_no
+JOIN salaries s ON e.emp_no=s.emp_no
+GROUP BY dept_no
+HAVING salary=max(salary);
+WHERE from_date >= '2020-01-01'
+
+--------------------------------------------------------------------------
+2. How many employees are working in Human Resources Department currently?
+
+SELECT count(emp_no) 
+FROM dept_emp de
+JOIN departments d on de.dept_no=d.dept_no
+WHERE dept_name='Human Resources'
+      and from_date >= '2020-01-01'
+
+--------------------------------------------------------------------------
+3. Who is currently the oldest employee of the company?
+
+SELECT first_name
+FROM employees
+WHERE hire_date=(SELECT max(hire_date) FROM employees)
+      and from_date >= '2020-01-01'
+or
+
+SELECT * 
+FROM employees 
+WHERE rownum=1 
+ORDER BY hire_date desc;
+
+
+ ---------------------------------------------------------
+4. What is the current average salary of Marketing Department?
+
+SELECT avg(s.salary), d.dept_name
+FROM departments d
+JOIN dept_emp de On d.dept_no = de.dept_no
+JOIN salaries s ON de.emp_no =s.emp_no
+WHERE dept_name='Marketing Department'
+      and from_date >= '2020-01-01'
+  
+
+
